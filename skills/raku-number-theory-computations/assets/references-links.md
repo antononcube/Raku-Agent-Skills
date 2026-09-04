@@ -14,7 +14,7 @@
 [MathematicaForPrediction at WordPress](https://mathematicaforprediction.wordpress.com).
 
 [AA3] Anton Antonov,
-["Collatz conjecture visualizations"(https://rakuforprediction.wordpress.com/2025/05/25/collatz-conjecture-visualizations/),
+["Collatz conjecture visualizations"](https://rakuforprediction.wordpress.com/2025/05/25/collatz-conjecture-visualizations/),
 (2025),
 [Raku Advent Calendar at WordPress](https://raku-advent.blog).
 
