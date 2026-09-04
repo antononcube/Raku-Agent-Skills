@@ -16,7 +16,7 @@ For visual or embedding utilities, load `Math::NumberTheory::Utilities` as well.
 
 ## Choose the package routine
 
-1. Identify the mathematical operation and look it up in [the routine table](assets/sub-names-and-descriptions-table.md). The table is the supplied package capability index.
+1. Identify the mathematical operation and look it up in [the routine table](references/sub-names-and-descriptions-table.md). The table is the supplied package capability index.
 2. Before committing to an invocation, find the closest concrete example in [the local test suite](../Math-NumberTheory/t/). Use `rg -n 'routine-name' ../Math-NumberTheory/t` to locate it.
 3. Preserve the tested calling convention: positional versus named arguments, listability, return shape, and numeric domain. Do not infer unsupported options or overloads merely from a routine name.
 4. Return ordinary Raku code with the needed `use` statement, and show the result or verify the relevant invariant when it makes the answer clearer.
@@ -161,3 +161,7 @@ raku -I Math::NumberTheory -e "$(w3m -T text/HTML -cols 120 -dump https://raw.gi
 ```
 
 If the local package is not installed or discoverable, state that environmental limitation rather than replacing package calls with an unrelated implementation.
+
+## Further examples
+
+For extended examples, presentations, or contextual explanations, consult [the source catalog](references/source-links.md). Treat these sources as supplementary; use the package tests as the authority for executable syntax and current behavior.

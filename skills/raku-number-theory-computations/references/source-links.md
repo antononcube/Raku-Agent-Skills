@@ -40,25 +40,25 @@
 
 [AAn1] Anton Antonov,
 [Number theory neat examples Set 1](https://github.com/antononcube/RakuForPrediction-blog/blob/main/Presentations/Notebooks/Number-theory-neat-examples-Set-1.ipynb),
-[*presentation notebook*](https://www.youtube.com/watch?v=wXXWyRAAPvc),
+[*presentation video*](https://www.youtube.com/watch?v=wXXWyRAAPvc),
 (2025),
 [RakuForPrediction-blog at GitHub](https://github.com/antononcube/RakuForPrediction-blog).
 
 [AAn2] Anton Antonov,
 [Number theory neat examples Set 2](https://github.com/antononcube/RakuForPrediction-blog/blob/main/Presentations/Notebooks/Number-theory-neat-examples-Set-2.ipynb),
-[*presentation notebook*](https://www.youtube.com/watch?v=sMwuGVvkLkU),
+[*presentation video*](https://www.youtube.com/watch?v=sMwuGVvkLkU),
 (2025),
 [RakuForPrediction-blog at GitHub](https://github.com/antononcube/RakuForPrediction-blog).
 
 [AAn3] Anton Antonov,
 [Number theory neat examples Set 3](https://github.com/antononcube/RakuForPrediction-blog/blob/main/Presentations/Notebooks/Number-theory-neat-examples-Set-3.ipynb),
-[*presentation notebook*](https://www.youtube.com/watch?v=6uCIoonlybk),
+[*presentation video*](https://www.youtube.com/watch?v=6uCIoonlybk),
 (2025),
 [RakuForPrediction-blog at GitHub](https://github.com/antononcube/RakuForPrediction-blog).
 
 [AAn4] Anton Antonov,
 [Number theory neat examples Set 4](https://github.com/antononcube/RakuForPrediction-blog/blob/main/Presentations/Notebooks/Number-theory-neat-examples-Set-4.ipynb),
-[*presentation notebook*](https://www.youtube.com/watch?v=6uCIoonlybk),
+[*presentation video*](https://www.youtube.com/watch?v=3ux-JA74eug),
 (2025),
 [RakuForPrediction-blog at GitHub](https://github.com/antononcube/RakuForPrediction-blog).
 
