@@ -96,6 +96,53 @@ for @solutions -> @x {
 
 `frobenius-solve` returns a list of coefficient vectors; pairwise multiply each vector with its coefficients to validate a solution. The call also supports `:coeff` and `:rhs`, as shown in `t/27-frobenius-solve.rakutest`.
 
+## Command Line Interface (CLI)
+
+The package "Math::NumberTheory" provides the Command Line Interface (CLI) script `number-theory`. Here is its usage note:
+
+```shell
+number-theory --help
+```
+```
+# Usage:
+#   number-theory <function words...> [args...]
+#   number-theory <function-words...> WHY
+# 
+# Examples:
+#   number-theory is harshad number 23        # calls is-harshad-number(23)
+#   number-theory is-happy-number 2026        # calls is-happy-number(2026)
+#   number-theory divisor sigma 3 500         # calls divisor-sigma(3, 500)
+#   number-theory divisor-sigma WHY           # prints &divisor-sigma.WHY
+# 
+# Known functions (from Math::NumberTheory):
+#   abundant-number, are-coprime, chinese-remainder, continued-fraction, convergents, cousin-primes, deficient-number, digit-count, divisor-sigma, divisors, euler-phi, extended-gcd, factor-integer, factorial, fibonacci, frobenius-number, frobenius-solve, from-continued-fraction, from-number-expansion, gcd-gaussian, gcd-rational, integer-digits, integer-exponent, integer-partitions, is-abundant-number, is-composite, is-deficient-number, is-happy-number, is-harshad-number, is-perfect-number, is-prime, is-prime-gaussian, is-prime-power, is-quadratic-irrational, kronecker-delta, lcm-gaussian, lcm-rational, mangold-lambda, modular-inverse, multiplicative-order, next-prime, number-expansion, perfect-number, phi-number-system, polygonal-number, power-mod, powers-representations, prime, primitive-root-list, quotient, quotient-reminder, random-prime, real-digits, related-primes, sexy-primes, squares-r, trial-factor-integer, twin-primes
+# 
+# True
+```
+
+The script takes proper sub names as a first argument or their "conversational" form. For example, these two commands invoke the same sub:
+
+```shell
+number-theory is-happy-number 2026
+```
+```
+# True
+```
+
+Using ranges:
+
+```shell
+number-theory random-prime 400..440 6
+```
+```
+# 409
+# 431
+# 419
+# 419
+# 409
+# 431
+```
+
 ## Raku conventions
 
 - Use hyphenated package routine names exactly as exported, such as `is-prime` and `quotient-reminder`.
@@ -106,10 +153,11 @@ for @solutions -> @x {
 
 ## Validation
 
-For a standalone example, run it with `raku path/to/file.raku`. For a package behavior claim, run the narrow existing test when its dependencies are available, for example:
+For a standalone example, run it with `raku path/to/file.raku`. For a package behavior claim, run the narrow existing test when its dependencies are available. 
+Or use test files from the package [GitHub repository](https://github.com/antononcube/Raku-Math-NumberTheory). For example:
 
 ```sh
-raku Math-NumberTheory/t/02-power-mod.rakutest
+raku -I Math::NumberTheory -e "$(w3m -T text/HTML -cols 120 -dump https://raw.githubusercontent.com/antononcube/Raku-Math-NumberTheory/refs/heads/main/t/02-power-mod.rakutest)"
 ```
 
 If the local package is not installed or discoverable, state that environmental limitation rather than replacing package calls with an unrelated implementation.
