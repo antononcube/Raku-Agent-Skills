@@ -26,9 +26,9 @@ Build `LLM::Graph` workflows whose node signatures clearly express data dependen
 
 ## Routing
 
-- Read [reference/llm-graph-api.md](reference/llm-graph-api.md) for node forms, dependency inference, evaluation, validation, and caching semantics.
-- Read [reference/patterns.md](reference/patterns.md) for composition patterns distilled from the repository examples and the large-text summarization notebook.
-- Read [reference/plotting.md](reference/plotting.md) when producing DOT, SVG, PNG, PDF, or explaining the plot's shapes and edges.
+- Read [references/llm-graph-api.md](references/llm-graph-api.md) for node forms, dependency inference, evaluation, validation, and caching semantics.
+- Read [references/patterns.md](references/patterns.md) for composition patterns distilled from the repository examples and the large-text summarization notebook.
+- Read [references/plotting.md](references/plotting.md) when producing DOT, SVG, PNG, PDF, or explaining the plot's shapes and edges.
 - Use `scripts/check-llm-graph.raku` to validate and list inferred edges for a graph-definition file without evaluating its nodes. Pass named external inputs as `--inputs=name1,name2` so their edges are included.
 - Use `scripts/plot-llm-graph.raku` to render such a definition file. These helpers execute the supplied Raku file; use them only with trusted local code.
 
