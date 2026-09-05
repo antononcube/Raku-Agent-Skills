@@ -37,7 +37,8 @@ say are-coprime(8, 11);                # True
 say primitive-root-list(9);            # [2, 5]
 ```
 
-`factor-integer` returns `(prime, exponent)` pairs. Reconstruct an input with `[*]` over `prime ** exponent`, as demonstrated in `t/01-integer-factors.rakutest`. Many prime routines accept a list; verify the exact list result in `t/04-prime.rakutest` before relying on that behavior.
+`factor-integer` returns `(prime, exponent)` pairs. Reconstruct an input with `[*]` over `prime ** exponent`, as demonstrated in [01-integer-factors.rakutest](https://raw.githubusercontent.com/antononcube/Raku-Math-NumberTheory/refs/heads/main/t/01-integer-factors.rakutest). 
+Many prime routines accept a list; verify the exact list result in ["t/04-prime.rakutest"](https://raw.githubusercontent.com/antononcube/Raku-Math-NumberTheory/refs/heads/main/t/04-prime.rakutest) before relying on that behavior.
 
 ### Modular arithmetic and congruences
 
@@ -94,7 +95,7 @@ for @solutions -> @x {
 }
 ```
 
-`frobenius-solve` returns a list of coefficient vectors; pairwise multiply each vector with its coefficients to validate a solution. The call also supports `:coeff` and `:rhs`, as shown in `t/27-frobenius-solve.rakutest`.
+`frobenius-solve` returns a list of coefficient vectors; pairwise multiply each vector with its coefficients to validate a solution. The call also supports `:coeff` and `:rhs`, as shown in ["t/27-frobenius-solve.rakutest"](https://raw.githubusercontent.com/antononcube/Raku-Math-NumberTheory/refs/heads/main/t/27-frobenius-solve.rakutest).
 
 ## Command Line Interface (CLI)
 
