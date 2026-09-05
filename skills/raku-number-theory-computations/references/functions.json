@@ -1,0 +1,262 @@
+[
+  {
+    "description": "Compute the nth abundant number",
+    "name": "abundant-number"
+  },
+  {
+    "description": "Give true if the arguments are coprime.",
+    "name": "are-coprime"
+  },
+  {
+    "description": "Give the Carmichael function λ(n). C($n) -- An integer.",
+    "name": "carmichael-lambda"
+  },
+  {
+    "name": "chinese-remainder",
+    "description": "Give the smallest x with x>=0 that satisfies all the integer congruences x mod m_i == r_i mod m_i. C<:@r> -- List of remainders. C<:@m> -- List of modules C<:$d> -- Number, lower limit of the result."
+  },
+  {
+    "name": "continued-fraction",
+    "description": "Generate a list of the first $n terms in the continued fraction representation of $x."
+  },
+  {
+    "description": "Give a list of the convergents corresponding to the given continued fraction terms list or a number.",
+    "name": "convergents"
+  },
+  {
+    "description": "Get the first n-pairs of primes that differ by 4.",
+    "name": "cousin-primes"
+  },
+  {
+    "name": "deficient-number",
+    "description": "Compute the nth deficient number."
+  },
+  {
+    "name": "digit-count",
+    "description": "gives the number of digits in a base representation of the argument. C<$n> -- Integer C<:$base> - Base (integer) C<:$digits> -"
+  },
+  {
+    "description": "Give the divisor function σ(exp, n).",
+    "name": "divisor-sigma"
+  },
+  {
+    "name": "divisors",
+    "description": "Give a list of the integers that divide the argument."
+  },
+  {
+    "description": "Gives the Euler totient function ϕ(n) that counts the positive integers up to a given integer n that are relatively prime to n. C<$n> -- Number.",
+    "name": "euler-phi"
+  },
+  {
+    "name": "extended-gcd",
+    "description": "Gives the extended greatest common divisor of the integers n[i]."
+  },
+  {
+    "description": "Give a list of the prime factors of the integer $n, together with their exponents. If the second argument $k is number then th sub does partial factorization, pulling out at most $k distinct factors.",
+    "name": "factor-integer"
+  },
+  {
+    "description": "Give the factorial of the argument. C<:$n> -- Integer.",
+    "name": "factorial"
+  },
+  {
+    "description": "Give the n-th Fibonacci number. C<$n> -- Non-negative integer or a list of non-negative integers.",
+    "name": "fibonacci"
+  },
+  {
+    "description": "Gives the Frobenius number of a[0], a[1], ...",
+    "name": "frobenius-number"
+  },
+  {
+    "name": "frobenius-solve",
+    "description": "Gives a list of all solutions of the Frobenius equation a[0] * x[0] + ... + a[n]*x[n] == b."
+  },
+  {
+    "name": "from-continued-fraction",
+    "description": "Reconstruct a number from the list of its continued fraction terms."
+  },
+  {
+    "name": "from-generalized-continued-fraction",
+    "description": "Reconstruct a number from the list of its generalized continued fraction terms."
+  },
+  {
+    "description": "Gives a rational approximation of a real number using different kinds of commonly known series expansions.",
+    "name": "from-number-expansion"
+  },
+  {
+    "name": "gcd-gaussian",
+    "description": "GCD for Gaussian integers."
+  },
+  {
+    "description": "GCD for rationals.",
+    "name": "gcd-rational"
+  },
+  {
+    "description": "Gives a list of the base $b digits of the integer $n.",
+    "name": "integer-digits"
+  },
+  {
+    "name": "integer-exponent",
+    "description": "Gives the highest power of b that divides n. C<$n> -- Integer. C<$b> -- (Base) integer."
+  },
+  {
+    "description": "Give a list of all possible ways to partition the integer argument into smaller integers.",
+    "name": "integer-partitions"
+  },
+  {
+    "description": "Check whether an input is an abundant number. An abundant number is a number whose sum of proper divisors is greater than the number itself. The proper divisors of an integer n are the positive integers less than n that divide n.",
+    "name": "is-abundant-number"
+  },
+  {
+    "description": "Gives true if the number is not prime.",
+    "name": "is-composite"
+  },
+  {
+    "description": "Check whether an input is a deficient number. A deficient number is a number whose sum of proper divisors is less than the number itself. The proper divisors of an integer n are the positive integers less than n that divide n.",
+    "name": "is-deficient-number"
+  },
+  {
+    "description": "Test whether an integer is a happy number.",
+    "name": "is-happy-number"
+  },
+  {
+    "description": "Test whether an integer is a harshad (\"joyful\") number.",
+    "name": "is-harshad-number"
+  },
+  {
+    "name": "is-perfect-number",
+    "description": "Check whether an input is a perfect number."
+  },
+  {
+    "description": "No description available",
+    "name": "is-prime"
+  },
+  {
+    "description": "Gives True if the argument is Gaussian prime. C<:$p> -- An integer or complex number or a list of numbers.",
+    "name": "is-prime-gaussian"
+  },
+  {
+    "description": "Gives true the number is a power of a prime.",
+    "name": "is-prime-power"
+  },
+  {
+    "description": "Give true if the argument is quadratic irrational.",
+    "name": "is-quadratic-irrational"
+  },
+  {
+    "name": "is-square-free",
+    "description": "No description available"
+  },
+  {
+    "description": "Gives the Kronecker delta value, which is equal to 1 if all the arguments are equal, and 0 otherwise.",
+    "name": "kronecker-delta"
+  },
+  {
+    "description": "LCM for Gaussian integers.",
+    "name": "lcm-gaussian"
+  },
+  {
+    "description": "LCM for rationals.",
+    "name": "lcm-rational"
+  },
+  {
+    "description": "Gives the Liouville lambda function λ(n).",
+    "name": "liouville-lambda"
+  },
+  {
+    "name": "lucas-l",
+    "description": "Give the n-th Lucas L number. C<$n> -- Non-negative integer or a list of non-negative integers."
+  },
+  {
+    "name": "mangold-lambda",
+    "description": "Give Mangold lambda for an integer"
+  },
+  {
+    "name": "modular-inverse",
+    "description": "Give the modular inverse of $k modulo $n."
+  },
+  {
+    "description": "Give the multiplicative order of $k modulo $n. Defined as the smallest integer $m such that $k^$m = 1 mod $n.",
+    "name": "multiplicative-order"
+  },
+  {
+    "description": "Give the smallest prime number above the argument. C<:$x> -- A number or a list of numbers. C<:$k> -- An integer or a list of integers.",
+    "name": "next-prime"
+  },
+  {
+    "description": "Expresses a number as an expansion using any of several methods.",
+    "name": "number-expansion"
+  },
+  {
+    "description": "Compute the nth perfect number.",
+    "name": "perfect-number"
+  },
+  {
+    "description": "Phi number system. C<$n> -- An integer number to convert. C<:$tol> -- Tolerance to stop the conversion with. C<:$length> -- Max number of digits.",
+    "name": "phi-number-system"
+  },
+  {
+    "name": "polygonal-number",
+    "description": "Give the $n-th $s-gonal number."
+  },
+  {
+    "name": "power-mod",
+    "description": "Give $b^$e mod $m. If $m is -1 the sub finds the modular inverse of a modulo $m."
+  },
+  {
+    "description": "Give the distinct representations of the integer $n as a sum of $k non-negative $p^th integer powers.",
+    "name": "powers-representations"
+  },
+  {
+    "name": "prime",
+    "description": "Give the n-th prime number. C<$n> -- Prime number index or a list of indexes."
+  },
+  {
+    "description": "No description available",
+    "name": "prime-nu"
+  },
+  {
+    "description": "Give the number of prime factors counting multiplicities Ω(n) in the argument.",
+    "name": "prime-omega"
+  },
+  {
+    "name": "prime-pi",
+    "description": "Give the number of primes π(x) less than or equal to the argument."
+  },
+  {
+    "name": "primitive-root-list",
+    "description": "Give a list of primitive roots of the argument."
+  },
+  {
+    "description": "Give the integer quotient of $m and $n.",
+    "name": "quotient"
+  },
+  {
+    "description": "Give a list of the quotient and remainder from division of $m by $n.",
+    "name": "quotient-reminder"
+  },
+  {
+    "name": "random-prime",
+    "description": "Give pseudo random prime numbers in specified ranges. C<:$range> -- Integer or Range. C<:$n> -- Number of primes to return."
+  },
+  {
+    "name": "real-digits",
+    "description": "Real digits C<$x> -- Number to convert. C<:$base> -- Conversion base. C<:$n> -- Digit exponent to start with. C<:$tol> -- Tolerance to stop the conversion with. C<:$length> -- Max number of digits."
+  },
+  {
+    "description": "Get the first n-pairs of primes that differ by given step. C<$n> -- Number of first pairs. C<:diff(:difference(:$step))> -- Difference between each pair.",
+    "name": "related-primes"
+  },
+  {
+    "name": "sexy-primes",
+    "description": "Get the first n-pairs of primes that differ by 6."
+  },
+  {
+    "name": "squares-r",
+    "description": "Give the number of ways r_d(n) to represent the integer n as a sum of d squares. r_d(n) gives the number of ways to write n_1^2 + ... + n_d^2 = n, where the n_i can be positive, negative, or zero. C<:$d> -- Number of squares. C<:$n> -- Integer to represent with a sum of squares."
+  },
+  {
+    "description": "Get the first n-pairs of primes that differ by 2.",
+    "name": "twin-primes"
+  }
+]
