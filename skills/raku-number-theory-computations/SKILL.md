@@ -27,7 +27,7 @@ Resolve both `./scripts/download-tests.sh` and `./assets` relative to this `SKIL
 ## Choose the package routine
 
 1. Identify the mathematical operation and look it up in [the routine table](references/sub-names-and-descriptions-table.md). The table is the supplied package capability index.
-2. Before committing to an invocation, ensure the tests are available as described above and find the closest concrete example with `rg -n 'routine-name' ./assets`.
+2. Before committing to an invocation, ensure the tests are available as described above and find the closest concrete example with `grep -rn 'routine-name' ./assets`.
 3. Preserve the tested calling convention: positional versus named arguments, listability, return shape, and numeric domain. Do not infer unsupported options or overloads merely from a routine name.
 4. Return ordinary Raku code with the needed `use` statement, and show the result or verify the relevant invariant when it makes the answer clearer.
 
