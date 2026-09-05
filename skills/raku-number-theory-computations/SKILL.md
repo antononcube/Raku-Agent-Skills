@@ -14,10 +14,20 @@ use Math::NumberTheory;
 
 For visual or embedding utilities, load `Math::NumberTheory::Utilities` as well.
 
+## Ensure the package tests are available
+
+The skill does not bundle the upstream test suite. When executable syntax or package behavior needs to be checked, look for `.rakutest` files in `./assets`. If they are absent, download them from the `Math::NumberTheory` repository:
+
+```sh
+./scripts/download-tests.sh
+```
+
+Resolve both `./scripts/download-tests.sh` and `./assets` relative to this `SKILL.md`, not relative to the user's project. The downloader requires `curl` and `tar`, places the repository's `t` directory contents in the skill's `assets` directory, and refuses to write into a nonempty destination. If network access or writing to the installed skill requires approval, request it before downloading.
+
 ## Choose the package routine
 
 1. Identify the mathematical operation and look it up in [the routine table](references/sub-names-and-descriptions-table.md). The table is the supplied package capability index.
-2. Before committing to an invocation, find the closest concrete example in [the local test suite](../Math-NumberTheory/t/). Use `rg -n 'routine-name' ../Math-NumberTheory/t` to locate it.
+2. Before committing to an invocation, ensure the tests are available as described above and find the closest concrete example with `rg -n 'routine-name' ./assets`.
 3. Preserve the tested calling convention: positional versus named arguments, listability, return shape, and numeric domain. Do not infer unsupported options or overloads merely from a routine name.
 4. Return ordinary Raku code with the needed `use` statement, and show the result or verify the relevant invariant when it makes the answer clearer.
 
@@ -37,8 +47,8 @@ say are-coprime(8, 11);                # True
 say primitive-root-list(9);            # [2, 5]
 ```
 
-`factor-integer` returns `(prime, exponent)` pairs. Reconstruct an input with `[*]` over `prime ** exponent`, as demonstrated in [01-integer-factors.rakutest](https://raw.githubusercontent.com/antononcube/Raku-Math-NumberTheory/refs/heads/main/t/01-integer-factors.rakutest). 
-Many prime routines accept a list; verify the exact list result in ["t/04-prime.rakutest"](https://raw.githubusercontent.com/antononcube/Raku-Math-NumberTheory/refs/heads/main/t/04-prime.rakutest) before relying on that behavior.
+`factor-integer` returns `(prime, exponent)` pairs. Reconstruct an input with `[*]` over `prime ** exponent`, as demonstrated in the downloaded `01-integer-factors.rakutest`.
+Many prime routines accept a list; verify the exact list result in the downloaded `04-prime.rakutest` before relying on that behavior.
 
 ### Modular arithmetic and congruences
 
@@ -95,7 +105,7 @@ for @solutions -> @x {
 }
 ```
 
-`frobenius-solve` returns a list of coefficient vectors; pairwise multiply each vector with its coefficients to validate a solution. The call also supports `:coeff` and `:rhs`, as shown in ["t/27-frobenius-solve.rakutest"](https://raw.githubusercontent.com/antononcube/Raku-Math-NumberTheory/refs/heads/main/t/27-frobenius-solve.rakutest).
+`frobenius-solve` returns a list of coefficient vectors; pairwise multiply each vector with its coefficients to validate a solution. The call also supports `:coeff` and `:rhs`, as shown in the downloaded `27-frobenius-solve.rakutest`.
 
 ## Command Line Interface (CLI)
 
@@ -154,12 +164,7 @@ number-theory random-prime 400..440 6
 
 ## Validation
 
-For a standalone example, run it with `raku path/to/file.raku`. For a package behavior claim, run the narrow existing test when its dependencies are available. 
-Or use test files from the package [GitHub repository](https://github.com/antononcube/Raku-Math-NumberTheory). For example:
-
-```sh
-raku -I Math::NumberTheory -e "$(w3m -T text/HTML -cols 120 -dump https://raw.githubusercontent.com/antononcube/Raku-Math-NumberTheory/refs/heads/main/t/02-power-mod.rakutest)"
-```
+For a standalone example, run it with `raku path/to/file.raku`. For a package behavior claim, ensure the upstream tests are present in `./assets` and run the narrow relevant `.rakutest` file when its dependencies are available.
 
 If the local package is not installed or discoverable, state that environmental limitation rather than replacing package calls with an unrelated implementation.
 
