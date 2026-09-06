@@ -107,6 +107,21 @@ for @solutions -> @x {
 
 `frobenius-solve` returns a list of coefficient vectors; pairwise multiply each vector with its coefficients to validate a solution. The call also supports `:coeff` and `:rhs`, as shown in the downloaded `27-frobenius-solve.rakutest`.
 
+### Utility functions
+
+The following subs are in "Math::NumberTheory::Utilities": `spiral-lattice`, `triangle-matrix-embedding`, `sunflower-embedding`, `circular-chords-tracing`.
+
+Example of Mangoldt lambda values on a 101 x 101 Ulam spiral:
+
+```raku
+use Math::NumberTheory;
+use Math::NumberTheory::Utilities;
+
+my @ulam-mangoldt-matrix = spiral-lattice(101).map({
+    $_.map(&mangold-lambda).Array
+}).Array;
+```
+
 ## Command Line Interface (CLI)
 
 The package "Math::NumberTheory" provides the Command Line Interface (CLI) script `number-theory`. Here is its usage note:

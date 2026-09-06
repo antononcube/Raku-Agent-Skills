@@ -3,6 +3,7 @@
   "are-coprime": "Give true if the arguments are coprime.",
   "carmichael-lambda": "Give the Carmichael function λ(n). C($n) -- An integer.",
   "chinese-remainder": "Give the smallest x with x>=0 that satisfies all the integer congruences x mod m_i == r_i mod m_i. C<:@r> -- List of remainders. C<:@m> -- List of modules C<:$d> -- Number, lower limit of the result.",
+  "circular-chords-tracing": "Circular chords tracing. C<$n> -- Positive integer. C<:&with> -- Function to derive the chords with. C<:d(:$dataset>) -- Should a dataset be returned or not.",
   "continued-fraction": "Generate a list of the first $n terms in the continued fraction representation of $x.",
   "convergents": "Give a list of the convergents corresponding to the given continued fraction terms list or a number.",
   "cousin-primes": "Get the first n-pairs of primes that differ by 4.",
@@ -62,6 +63,9 @@
   "real-digits": "Real digits C<$x> -- Number to convert. C<:$base> -- Conversion base. C<:$n> -- Digit exponent to start with. C<:$tol> -- Tolerance to stop the conversion with. C<:$length> -- Max number of digits.",
   "related-primes": "Get the first n-pairs of primes that differ by given step. C<$n> -- Number of first pairs. C<:diff(:difference(:$step))> -- Difference between each pair.",
   "sexy-primes": "Get the first n-pairs of primes that differ by 6.",
+  "spiral-lattice": "Spiral square lattice C<$n> -- Square side size. C<:l(:end-corner(:$last-at))> -- Corner to finish the spiral at. C<:d(:$dataset)> -- Should a dataset be returned or not.",
   "squares-r": "Give the number of ways r_d(n) to represent the integer n as a sum of d squares. r_d(n) gives the number of ways to write n_1^2 + ... + n_d^2 = n, where the n_i can be positive, negative, or zero. C<:$d> -- Number of squares. C<:$n> -- Integer to represent with a sum of squares.",
+  "sunflower-embedding": "Sunflower embedding of integers from 1 to given upper limit. C<$n> -- A positive integer or a list of integers. C<:&with> -- Function to apply to each integer and add the result to the corresponding record. C<:d(:$dataset)> -- Should a dataset be returned or not? C<:a(:$angle)> -- Angle between successive points. If C<WhateverCode> then no such application and addition is done.",
+  "triangle-matrix-embedding": "Gives a triangle within a matrix. C<$k> -- Number of rows of the embedding matrix. (Odd numbers only.) C<:na(:$missing-value))> -- Missing value. C<:d(:$dataset)> -- Should a dataset be returned or not.",
   "twin-primes": "Get the first n-pairs of primes that differ by 2."
 }
