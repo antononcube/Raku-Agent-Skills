@@ -11,8 +11,8 @@ the metadata needed to select a paper, and download fetches its PDF.
 
 ## Search
 
-The search helper requires `HTTP::Simple` (for example, install it with `zef
-install HTTP::Simple` when it is not already available).
+The search helper requires `HTTP::Tiny` (for example, install it with `zef
+install HTTP::Tiny` when it is not already available).
 
 Run `scripts/search-arxiv.raku` with an arXiv API search expression:
 
@@ -20,7 +20,7 @@ Run `scripts/search-arxiv.raku` with an arXiv API search expression:
 raku scripts/search-arxiv.raku --query 'cat:cs.AI AND ti:"large language models"' --max-results=20
 ```
 
-It uses `HTTP::Simple` and arXiv's Atom API. Results are tab-separated with the
+It uses `HTTP::Tiny` and arXiv's Atom API. Results are tab-separated with the
 identifier, publication date, title, authors, and PDF URL. Use `--raw` only
 when the Atom feed itself is required. Read
 [references/query-syntax.md](references/query-syntax.md) before constructing
