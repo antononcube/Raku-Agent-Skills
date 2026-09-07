@@ -1,9 +1,19 @@
 #!/usr/bin/env raku
 use v6.d;
 
-use HTTP::Simple;
+use HTTP::Tiny;
 
-my constant API-URL = 'https://export.arxiv.org/api/query';
+my constant API-URL = 'http://export.arxiv.org/api/query';
+
+sub query-component(Str:D $value --> Str:D) {
+    $value.encode.list.map(-> $byte {
+        my $unreserved = ($byte >= 0x41 && $byte <= 0x5A)
+            || ($byte >= 0x61 && $byte <= 0x7A)
+            || ($byte >= 0x30 && $byte <= 0x39)
+            || $byte == 0x2D || $byte == 0x2E || $byte == 0x5F || $byte == 0x7E;
+        $unreserved ?? $byte.chr !! $byte.fmt('%%%02X')
+    }).join
+}
 
 sub xml-text(Str:D $text --> Str:D) {
     my $decoded = $text;
@@ -31,7 +41,6 @@ sub MAIN(
     Int:D :$max-results = 10,
     Str:D :$sort-by = 'relevance',
     Str:D :$sort-order = 'descending',
-    Int:D :$timeout = 30,
     Bool:D :$raw = False,
 ) {
     die '--start must be zero or greater' if $start < 0;
@@ -40,21 +49,24 @@ sub MAIN(
         unless $sort-by eq any(<relevance lastUpdatedDate submittedDate>);
     die '--sort-order must be ascending or descending'
         unless $sort-order eq any(<ascending descending>);
-    die '--timeout must be positive' if $timeout <= 0;
-
-    my %parameters =
+    my @parameters =
         search_query => $query,
         start        => $start,
         max_results  => $max-results,
         sortBy       => $sort-by,
         sortOrder    => $sort-order;
 
-    my $response = http-get(API-URL, :query(%parameters), :$timeout);
-    unless $response.ok {
-        die "arXiv returned {$response.status} {$response.reason}: {$response.text}";
+    my $url = API-URL ~ '?' ~ @parameters.map(-> $parameter {
+        query-component($parameter.key.Str) ~ '=' ~ query-component($parameter.value.Str)
+    }).join('&');
+    my %response = HTTP::Tiny.new.get($url);
+    unless %response<success> {
+        my $body = (%response<content> // Blob.new).decode;
+        die "arXiv returned {%response<status> // 'an unknown status'} "
+            ~ "{%response<reason> // ''}: $body";
     }
 
-    my $feed = $response.text;
+    my $feed = (%response<content> // Blob.new).decode;
     if $raw {
         print $feed;
         exit;
@@ -67,8 +79,7 @@ sub MAIN(
         my $id = $id-url.split('/abs/')[*-1];
         my $title = first-element($entry, 'title');
         my $published = first-element($entry, 'published');
-        my @authors = $entry.match(/ '<author' [\s+ <-[>]>]* '>' (.*?) '</author>' /, :g)
-            .map({ first-element(~$_[0], 'name') });
+        my @authors = $entry.match(/ '<author' [\s+ <-[>]>]* '>' (.*?) '</author>' /, :g).map({ first-element(~$_[0], 'name') });
         my $pdf = '';
         for $entry.match(/ '<link' (.*?) '/>' /, :g) -> $link-match {
             my $link = ~$link-match[0];
