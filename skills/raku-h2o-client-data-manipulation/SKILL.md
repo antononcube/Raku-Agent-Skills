@@ -21,8 +21,9 @@ my $h2o = H2O::Client.new('http://127.0.0.1:54321');
 ```
 
 - Use `import-file($url-or-server-path, :job, ...)` when the H2O server can
-  reach the URL or filesystem path. With `:job`, it imports, obtains inferred
-  parse setup, and submits a parse job. Wait for it before using its frame.
+  reach the URL or filesystem path. Prefer an `https://` URL. With `:job`, it
+  imports, obtains inferred parse setup, and submits a parse job. Wait for it
+  before using its frame.
 
   ```raku
   my $frame = $h2o.import-file(
@@ -38,6 +39,14 @@ my $h2o = H2O::Client.new('http://127.0.0.1:54321');
   does not create a parsed frame. Pass parse options such as `check_header`,
   `separator`, `column-names`, or `column-types` alongside `:job` when the
   inferred setup needs adjustment.
+
+  Direct HTTP(S) import is performed by the H2O server, so it depends on that
+  server's outbound network access and HTTP implementation. The "H2O::Client" 
+- project has observed H2O reject the plain CSV URL
+  `http://h2o-public-test-data.s3.amazonaws.com/smalldata/iris/iris_wheader.csv`
+  at `/3/Parse` with `Chunk sizes must be > 0`. Try the HTTPS form first. If
+  direct import still fails (even if a ZIP URL works), download the file on the
+  Raku host and use `upload-file`; this avoids server-side URL import entirely.
 
 - Use `upload-file($local-path.IO, ...)` for a file on the Raku process's local
   OS filesystem, especially when it is not mounted on the H2O server. It posts
