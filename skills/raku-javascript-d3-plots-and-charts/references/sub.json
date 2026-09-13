@@ -1,0 +1,40 @@
+{
+  "purpose": "Compact navigation index for the supplied JavaScript::D3 signatures. Consult subs.json for exact overloads and defaults.",
+  "configuration": {
+    "name": "js-d3-config",
+    "use": "Return JavaScript to prime a Jupyter frontend with D3 before rendering :format<jupyter> output.",
+    "named_arguments": ["d3-version", "d33d-version", "direct", "with-d33d"]
+  },
+  "shared_output_options": {
+    "format": {
+      "default": "jupyter",
+      "values": ["jupyter", "html", "html-md", "asis"],
+      "meaning": "Choose code for a Jupyter frontend, a complete standalone HTML document, an embeddable HTML fragment, or unwrapped JavaScript. Support varies by routine; confirm in subs.json."
+    },
+    "div-id": "Optional target element identifier, especially important for HTML output or multiple plots."
+  },
+  "routines": {
+    "charts": [
+      {"name": "js-d3-bar-chart", "data": "numeric positional data, pairs, a hash, or Map records", "options": ["horizontal", "legends", "color-scheme"]},
+      {"name": "js-d3-box-whisker-chart", "data": "numeric values or Map records", "options": ["outliers", "horizontal", "box-width", "group-column-name", "value-column-name"]},
+      {"name": "js-d3-bubble-chart", "data": "2-, 3-, or 4-column positional data or Map records using x/y/z", "options": ["z-range-min", "z-range-max", "opacity", "tooltip", "axes"]},
+      {"name": "js-d3-density2d-chart", "data": "pairs/lists or Map records using x/y", "options": ["method", "grid-lines"]},
+      {"name": "js-d3-histogram", "data": "numeric values", "options": ["number-of-bins (alias: bins)", "color-scheme"]}
+    ],
+    "plots": [
+      {"name": "js-d3-list-line-plot", "data": "numeric values, 2- or 3-column positional data, or Map records", "options": ["filled", "point-size", "stroke-width", "x-axis-scale", "y-axis-scale", "tooltip", "legends"]},
+      {"name": "js-d3-date-list-plot", "data": "numeric values, date/value lists, a string time series, or pairs", "options": ["time-parse-spec", "filled", "axes", "legends"]},
+      {"name": "js-d3-heatmap-plot", "data": "2- or 3-column positional data or Map records", "options": ["color-palette", "x-tick-labels", "y-tick-labels", "tooltip", "mesh"]},
+      {"name": "js-d3-list-point-plot3d", "data": "3- or 4-column positional data or Map records", "options": ["box-ratios", "view-point", "zooming-enabled", "boxed", "ticks", "default-type"]},
+      {"name": "js-d3-matrix-plot", "data": "an array/matrix", "options": ["margins", "background", "grid-lines", "round-corners"]}
+    ],
+    "specialized_visualizations": [
+      {"name": "js-d3-graph-plot", "data": "edge pairs, 2- to 4-column positional data, or Map records", "options": ["directed-edges (alias: directed)", "vertex-coordinates", "force", "highlight"]},
+      {"name": "js-d3-image", "data": "a numeric matrix", "options": ["color-palette", "low-value", "high-value"]},
+      {"name": "js-d3-image-display", "data": "an image specification", "options": ["width", "height"]},
+      {"name": "js-d3-chessboard", "data": "a string, strings, three-column positional data, Map records, or defaults", "options": ["color-palette", "black-square-value", "white-square-value"]},
+      {"name": "js-d3-clock-gauge", "data": "a DateTime, hour/minute/second, or named time fields", "options": ["update-interval", "gauge-labels", "scale-ranges", "stroke-width"]},
+      {"name": "js-d3-random-koch-curve", "data": "a generated or supplied point sequence with distributions and iteration count", "options": []}
+    ]
+  }
+}

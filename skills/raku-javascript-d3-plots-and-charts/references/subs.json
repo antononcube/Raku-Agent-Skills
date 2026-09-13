@@ -1,0 +1,254 @@
+{
+  "schema_version": 2,
+  "package": "JavaScript::D3",
+  "source": "Installed JavaScript::D3 public module; inspected 2026-09-13.",
+  "reference_scope": "Public js-d3-* exports. public_signatures describe calls accepted by JavaScript::D3 itself; delegated_signatures preserve the detailed overloads supplied by the original reference.",
+  "routines": [
+    {
+      "name": "js-d3-bar-chart",
+      "public_signatures": [
+        "$data, *%args"
+      ],
+      "delegated_signatures": [
+        "$data where $data ~~ Seq, *%args",
+        "$data where $data ~~ (Array | List | Seq) && $data.all ~~ Numeric, *%args",
+        "$data where $data ~~ (Array | List | Seq) && $data.all ~~ Pair:D, *%args",
+        "%data, *%args",
+        "@data is copy where @data.all ~~ Map,\n                   Str :$background= 'white',\n                   Str :$color= 'steelblue',\n                   Str :$color-scheme = 'schemeSet2',\n                   :$width = 600,\n                   :$height = 400,\n                   Str :plot-label(:$title) = '',\n                   UInt :plot-label-font-size(:$title-font-size) = 16,\n                   Str :plot-label-color(:$title-color) = 'Black',\n                   Str :x-label(:$x-axis-label) = '',\n                   :x-label-color(:$x-axis-label-color) is copy = Whatever,\n                   :x-label-font-size(:$x-axis-label-font-size) is copy = Whatever,\n                   Str :y-label(:$y-axis-label) = '',\n                   :y-label-color(:$y-axis-label-color) is copy = Whatever,\n                   :y-label-font-size(:$y-axis-label-font-size) is copy = Whatever,\n                   :$plot-labels-color is copy = Whatever,\n                   Str :$plot-labels-font-family = 'Courier',\n                   :$plot-labels-font-size is copy = Whatever,\n                   :$grid-lines is copy = False,\n                   :$margins is copy = Whatever,\n                   :$legends = Whatever,\n                   Bool :$horizontal = False,\n                   Str :$format = 'jupyter',\n                   :$div-id = Whatever\n                   "
+      ]
+    },
+    {
+      "name": "js-d3-box-whisker-chart",
+      "public_signatures": [
+        "$data, *%args"
+      ],
+      "delegated_signatures": [
+        "$data where $data ~~ Seq, *%args",
+        "@data where @data.all ~~ Numeric,\n                          Bool :$outliers = True,\n                          Bool :$horizontal = False,\n                          UInt :$box-width = 50,\n                          Str :$background = 'white',\n                          Str :color(:$fill-color) = 'steelblue',\n                          Str :$stroke-color = 'black',\n                          :$width is copy = Whatever,\n                          :$height is copy = Whatever,\n                          Str :plot-label(:$title) = '',\n                          UInt :plot-label-font-size(:$title-font-size) = 16,\n                          Str :plot-label-color(:$title-color) = 'Black',\n                          Str :x-label(:$x-axis-label) = '',\n                          :x-label-color(:$x-axis-label-color) is copy = Whatever,\n                          :x-label-font-size(:$x-axis-label-font-size) is copy = Whatever,\n                          Str :y-label(:$y-axis-label) = '',\n                          :y-label-color(:$y-axis-label-color) is copy = Whatever,\n                          :y-label-font-size(:$y-axis-label-font-size) is copy = Whatever,\n                          Str :$tooltip-background-color = 'black',\n                          Str :$tooltip-color = 'white',\n                          :$grid-lines is copy = False,\n                          :$margins is copy = Whatever,\n                          Str :$format = 'jupyter',\n                          :$div-id = Whatever\n                          ",
+        "@data where @data.all ~~ Map:D,\n                          Bool :$outliers = True,\n                          Bool :$horizontal = False,\n                          Str :group(:$group-column-name) = 'group',\n                          Str :value(:$value-column-name) = 'value',\n                          UInt :$box-width = 50,\n                          Str :$background = 'white',\n                          Str :$color = 'steelblue',\n                          :$width = 600,\n                          :$height = 400,\n                          Str :plot-label(:$title) = '',\n                          UInt :plot-label-font-size(:$title-font-size) = 16,\n                          Str :plot-label-color(:$title-color) = 'Black',\n                          Str :x-label(:$x-axis-label) = '',\n                          :x-label-color(:$x-axis-label-color) is copy = Whatever,\n                          :x-label-font-size(:$x-axis-label-font-size) is copy = Whatever,\n                          Str :y-label(:$y-axis-label) = '',\n                          :y-label-color(:$y-axis-label-color) is copy = Whatever,\n                          :y-label-font-size(:$y-axis-label-font-size) is copy = Whatever,\n                          Str :$tooltip-background-color = 'black',\n                          Str :$tooltip-color = 'white',\n                          :$grid-lines is copy = False,\n                          :$margins is copy = Whatever,\n                          Str :$format = 'jupyter',\n                          :$div-id = Whatever\n                    "
+      ]
+    },
+    {
+      "name": "js-d3-bubble-chart",
+      "public_signatures": [
+        "$data, *%args"
+      ],
+      "delegated_signatures": [
+        "$data where $data ~~ Seq, *%args",
+        "$data where is-positional-of-lists($data, 4), *%args",
+        "$data where is-positional-of-lists($data, 3), *%args",
+        "$data where is-positional-of-lists($data, 2), *%args",
+        "@data is copy where @data.all ~~ Map,\n                      Numeric :$z-range-min = 1,\n                      Numeric :$z-range-max = 40,\n                      Str :$background = 'White',\n                      Str :color(:$fill-color) = 'SteelBlue',\n                      Str :stroke(:$stroke-color) = 'Gray',\n                      Str :color-palette(:$color-scheme) = 'Set2',\n                      Numeric :$opacity = 0.7,\n                      :$width = 600,\n                      :$height = 600,\n                      Str :plot-label(:$title) = '',\n                      UInt :plot-label-font-size(:$title-font-size) = 16,\n                      Str :plot-label-color(:$title-color) = 'Black',\n                      Str :x-label(:$x-axis-label) = '',\n                      :x-label-color(:$x-axis-label-color) is copy = Whatever,\n                      :x-label-font-size(:$x-axis-label-font-size) is copy = Whatever,\n                      Str :y-label(:$y-axis-label) = '',\n                      :y-label-color(:$y-axis-label-color) is copy = Whatever,\n                      :y-label-font-size(:$y-axis-label-font-size) is copy = Whatever,\n                      Bool :$axes = True,\n                      :$grid-lines is copy = False,\n                      :$margins is copy = Whatever,\n                      :$tooltip = Whatever,\n                      Str :$tooltip-background-color = 'black',\n                      Str :$tooltip-color = 'white',\n                      :$legends = Whatever,\n                      Str :$format = 'jupyter',\n                      :$div-id = Whatever\n                      "
+      ]
+    },
+    {
+      "name": "js-d3-chessboard",
+      "public_signatures": [
+        "$data, *%args"
+      ],
+      "delegated_signatures": [
+        "$data where $data ~~ Seq, *%args",
+        "*%args",
+        "Str $data, *%args",
+        "@data where (@data.elems > 0) && @data.all ~~ Str, *%args",
+        "$data where is-positional-of-lists($data, 3), *%args",
+        "@data is copy where @data.all ~~ Map,\n                     :$width = 400,\n                     :$height = Whatever,\n                     Str :$background = 'white',\n                     Str :$color-palette = 'Greys',\n                     Numeric :$black-square-value = 0.5,\n                     Numeric :$white-square-value = 0.15,\n                     Str :$whites-stroke-color = 'darkslategray',\n                     Str :whites-color(:$whites-fill-color) = 'white',\n                     Str :$whites-font-family = 'Courier',\n                     Str :$blacks-stroke-color = 'black',\n                     Str :blacks-color(:$blacks-fill-color) = 'black',\n                     Str :$blacks-font-family = 'Courier',\n                     Str :$tick-labels-color = 'black',\n                     Numeric :$opacity = 1.0,\n                     Str :plot-label(:$title) = '',\n                     :$margins is copy = Whatever,\n                     Str :$format = 'jupyter',\n                     :$div-id = Whatever,\n                     *%args\n                     "
+      ]
+    },
+    {
+      "name": "js-d3-clock-gauge",
+      "public_signatures": [
+        "$data, *%args"
+      ],
+      "delegated_signatures": [
+        "DateTime:D $date-time, *%args",
+        "DateTime:D :time(:date(:$date-time)), *%args",
+        "$hour = Whatever, $minute = Whatever, $second = Whatever, *%args",
+        ":h(:$hour) is copy = Whatever,\n                :m(:$minute) is copy = Whatever,\n                :s(:$second) is copy = Whatever,\n                :$width is copy = Whatever,\n                :$height is copy = Whatever,\n                Str :plot-label(:$title) = '',\n                UInt :plot-label-font-size(:$title-font-size) = 16,\n                Str :plot-label-color(:$title-color) = 'Black',\n                Str:D :$background = 'White',\n                UInt:D :bazel-width(:$stroke-width) = 2,\n                Str:D :color(:$stroke-color) = 'Black',\n                Str:D :fill(:$fill-color) = 'none',\n                :$hour-hand-color is copy = Whatever,\n                :$minute-hand-color is copy = Whatever,\n                :$second-hand-color = 'Gray',\n                :$scale-ranges is copy = Whatever,\n                :$gauge-labels is copy = {},\n                :color-palette(:$color-scheme) is copy = Whatever,\n                :$tick-labels-color is copy = Whatever,\n                Numeric:D :$tick-labels-font-size  = 16,\n                Str:D :$tick-labels-font-family is copy = 'Ariel',\n                :$gauge-labels-color is copy = Whatever,\n                Numeric:D :$gauge-labels-font-size  = 16,\n                Str:D :$gauge-labels-font-family is copy = 'Ariel',\n                Numeric:D :$update-interval = 1000,\n                :$color-scheme-interpolation-range is copy = Whatever,\n                :$margins is copy = 5,\n                Str:D :$format = 'jupyter',\n                :$div-id = Whatever,\n                *%args\n                "
+      ]
+    },
+    {
+      "name": "js-d3-config",
+      "public_signatures": [
+        ":v(:$d3-version) = 7, :v3d(:$d33d-version) = 2.0.2, Bool:D :$direct = True, Bool:D :$with-d33d = True"
+      ],
+      "purpose": "Returns JavaScript that primes a Jupyter frontend with D3 (and d3-3d by default)."
+    },
+    {
+      "name": "js-d3-date-list-plot",
+      "public_signatures": [
+        "$data, *%args"
+      ],
+      "delegated_signatures": [
+        "$data where $data ~~ Seq, *%args",
+        "$data where $data ~~ Positional && $data.all ~~ Numeric, *%args",
+        "$data where is-positional-of-str-date-time-value-lists($data), *%args",
+        "$data where is-str-time-series($data),\n                       Str :$background= 'white',\n                       Str :color(:$stroke-color) = 'steelblue',\n                       :$fill-color is copy = Whatever,\n                       Str :$color-scheme = 'schemeSet2',\n                       :$width = 600,\n                       :$height = 400,\n                       Str :plot-label(:$title) = '',\n                       Str :date-axis-label(:$x-axis-label) = '',\n                       Str :value-axis-label(:$y-axis-label) = '',\n                       Str :$time-parse-spec = '%Y-%m-%d',\n                       :$grid-lines is copy = False,\n                       :$margins is copy = Whatever,\n                       :$legends = Whatever,\n                       Bool :$axes = True,\n                       Bool :$filled = False,\n                       Str :$format = 'jupyter',\n                       :$div-id = Whatever,\n                       *%args\n                       ",
+        "@data where @data.all ~~ Pair:D, *%args",
+        "$data, *%args"
+      ]
+    },
+    {
+      "name": "js-d3-density2d-chart",
+      "public_signatures": [
+        "$data, *%args"
+      ],
+      "delegated_signatures": [
+        "$data where $data ~~ Seq, *%args",
+        "@data where @data.all ~~ List, *%args",
+        "@data where @data.all ~~ Map,\n                     Str :$background= 'white',\n                     Str :$color= 'steelblue',\n                     :$width = 600,\n                     :$height = 600,\n                     Str :plot-label(:$title) = '',\n                     Str :$x-axis-label = '',\n                     UInt :$x-axis-label-font-size = 12;\n                     Str :$x-axis-label-color = 'Black';\n                     Str :$y-axis-label = '',\n                     UInt :$y-axis-label-font-size = 12;\n                     Str :$y-axis-label-color = 'Black';\n                     :$grid-lines is copy = False,\n                     :$margins is copy = Whatever,\n                     :$method is copy = Whatever,\n                     Str :$format = 'jupyter',\n                     :$div-id = Whatever\n                     "
+      ]
+    },
+    {
+      "name": "js-d3-graph-plot",
+      "public_signatures": [
+        "$data, *%args"
+      ],
+      "delegated_signatures": [
+        "$data where $data ~~ Seq:D, *%args",
+        "@data where @data.all ~~ Pair:D, *%args",
+        "$data where is-positional-of-lists($data, 2), *%args",
+        "$data where is-positional-of-lists($data, 3), *%args",
+        "$data where is-positional-of-lists($data, 4), *%args",
+        "@data is copy where @data.all ~~ Map,\n                    Bool:D :d(:directed(:$directed-edges)) = False,\n                    :$vertex-coordinates is copy = Whatever,\n                    :$width is copy = 400,\n                    :$height is copy = Whatever,\n                    Str :plot-label(:$title) = '',\n                    UInt :plot-label-font-size(:$title-font-size) = 16,\n                    Str :plot-label-color(:$title-color) = 'Black',\n                    :$vertex-label-color is copy = Whatever,\n                    :$vertex-label-font-size is copy = Whatever,\n                    :$vertex-label-font-family is copy = 'Courier New',\n                    :$edge-label-color is copy = Whatever,\n                    :$edge-label-font-size is copy = Whatever,\n                    :$edge-label-font-family is copy = 'Courier New',\n                    Str:D :$background = 'White',\n                    :vertex-color(:$vertex-fill-color) is copy = Whatever,\n                    :$vertex-stroke-color is copy = Whatever,\n                    Numeric:D :$vertex-size = 2,\n                    :$edge-color is copy = 'SteelBlue',\n                    :%force is copy = %(),\n                    :$edge-thickness is copy = 1,\n                    :$arrowhead-size is copy = Whatever,\n                    :$arrowhead-offset is copy = Whatever,\n                    :$highlight is copy = Empty,\n                    :$margins is copy = Whatever,\n                    Str :$format = 'jupyter',\n                    :$div-id = Whatever\n                    "
+      ]
+    },
+    {
+      "name": "js-d3-heatmap-plot",
+      "public_signatures": [
+        "$data, *%args"
+      ],
+      "delegated_signatures": [
+        "$data where $data ~~ Seq, *%args",
+        "$data where is-positional-of-lists($data, 3), *%args",
+        "$data where is-positional-of-lists($data, 2), *%args",
+        "@data is copy where @data.all ~~ Map,\n                      :$width is copy = 600,\n                      :$height is copy = 600,\n                      Str :plot-label(:$title) = '',\n                      UInt :plot-label-font-size(:$title-font-size) = 16,\n                      Str :plot-label-color(:$title-color) = 'Black',\n                      Str :x-label(:$x-axis-label) = '',\n                      :x-label-color(:$x-axis-label-color) is copy = Whatever,\n                      :x-label-font-size(:$x-axis-label-font-size) is copy = Whatever,\n                      Str :y-label(:$y-axis-label) = '',\n                      :y-label-color(:$y-axis-label-color) is copy = Whatever,\n                      :y-label-font-size(:$y-axis-label-font-size) is copy = Whatever,\n                      :$color = Whatever,\n                      Str :$color-palette = 'Inferno',\n                      Str :$background = 'White',\n                      Str :$tick-labels-color = 'Black',\n                      :$tick-labels-font-size is copy = Whatever,\n                      Str:D :$tick-labels-font-family = 'Helvetica',\n                      Numeric :$opacity = 0.7,\n                      Str :$plot-labels-color = 'Black',\n                      :$plot-labels-font-size is copy = Whatever,\n                      Str :$plot-labels-font-family = 'Courier',\n                      :$x-tick-labels is copy = Whatever,\n                      :$y-tick-labels is copy = Whatever,\n                      Bool :$sort-tick-labels = True,\n                      Bool :$show-groups = True,\n                      :$low-value is copy = Whatever,\n                      :$high-value is copy = Whatever,\n                      :$margins is copy = Whatever,\n                      Bool :$tooltip = True,\n                      :$tooltip-background-color is copy = Whatever,\n                      :$tooltip-color is copy = Whatever,\n                      :$mesh = True,\n                      :$grid-lines is copy = Whatever,\n                      :$round-corners is copy = Whatever,\n                      Str :$format = 'jupyter',\n                      :$div-id = Whatever\n                      "
+      ]
+    },
+    {
+      "name": "js-d3-histogram",
+      "public_signatures": [
+        "$data, UInt $number-of-bins, *%args",
+        "$data, *%args"
+      ],
+      "delegated_signatures": [
+        "$data, UInt $number-of-bins, *%args",
+        "$data where $data ~~ Seq, *%args",
+        "@data where @data.all ~~ Numeric,\n                    UInt :bins(:$number-of-bins) = 20,\n                    Str :$background= 'white',\n                    Str :$color= 'steelblue',\n                    Str :$color-scheme = 'schemeSet2',\n                    :$width = 600,\n                    :$height = 400,\n                    Str :plot-label(:$title) = '',\n                    UInt :plot-label-font-size(:$title-font-size) = 16,\n                    Str :plot-label-color(:$title-color) = 'Black',\n                    Str :x-label(:$x-axis-label) = '',\n                    :x-label-color(:$x-axis-label-color) is copy = Whatever,\n                    :x-label-font-size(:$x-axis-label-font-size) is copy = Whatever,\n                    Str :y-label(:$y-axis-label) = '',\n                    :y-label-color(:$y-axis-label-color) is copy = Whatever,\n                    :y-label-font-size(:$y-axis-label-font-size) is copy = Whatever,\n                    :$grid-lines is copy = False,\n                    :$margins is copy = Whatever,\n                    Str :$format = 'jupyter',\n                    :$div-id = Whatever\n                    "
+      ]
+    },
+    {
+      "name": "js-d3-image",
+      "public_signatures": [
+        "$data, *%args"
+      ],
+      "delegated_signatures": [
+        "$data where $data ~~ Seq, *%args",
+        "@data where is-matrix(@data, Numeric:D),\n                Str :$color-palette= \"Greys\",\n                :$width is copy = Whatever,\n                :$height is copy = Whatever,\n                :$low-value is copy = Whatever,\n                :$high-value is copy = Whatever,\n                Str :$format = 'jupyter',\n                :$div-id = Whatever\n                "
+      ]
+    },
+    {
+      "name": "js-d3-image-display",
+      "public_signatures": [
+        "$data, *%args"
+      ],
+      "delegated_signatures": [
+        "$spec,\n                       :$width is copy = Whatever,\n                       :$height is copy = Whatever,\n                       Str :$format = 'jupyter',\n                       :$div-id = Whatever "
+      ]
+    },
+    {
+      "name": "js-d3-list-line-plot",
+      "public_signatures": [
+        "$data, *%args"
+      ],
+      "delegated_signatures": [
+        "$data where $data ~~ Seq, *%args",
+        "$data where is-positional-of-lists($data, 3), *%args",
+        "$data where is-positional-of-lists($data, 2), *%args",
+        "$data where $data ~~ Positional && $data.all ~~ Numeric, *%args",
+        "@data where @data.all ~~ Map,\n                          Str :$background = 'White',\n                          Str :color(:$stroke-color) = 'SteelBlue',\n                          :$fill-color is copy = Whatever,\n                          Str :color-palette(:$color-scheme) = 'Set2',\n                          :$width = 600,\n                          :$height = 400,\n                          Str :plot-label(:$title) = '',\n                          UInt :plot-label-font-size(:$title-font-size) = 16,\n                          Str :plot-label-color(:$title-color) = 'Black',\n                          Str :x-label(:$x-axis-label) = '',\n                          :x-label-color(:$x-axis-label-color) is copy = Whatever,\n                          :x-label-font-size(:$x-axis-label-font-size) is copy = Whatever,\n                          :$x-axis-scale = Whatever,\n                          Str :y-label(:$y-axis-label) = '',\n                          :y-label-color(:$y-axis-label-color) is copy = Whatever,\n                          :y-label-font-size(:$y-axis-label-font-size) is copy = Whatever,\n                          :$y-axis-scale = Whatever,\n                          :$tooltip = Whatever,\n                          Str :$tooltip-background-color = 'Black',\n                          Str :$tooltip-color = 'White',\n                          :$grid-lines is copy = False,\n                          :$margins is copy = Whatever,\n                          :$legends = Whatever,\n                          Bool :$axes = True,\n                          Bool :$filled = False,\n                          Numeric :$point-size = 6,\n                          Numeric :$stroke-width = 1.5,\n                          Str :$format = 'jupyter',\n                          :$div-id = Whatever,\n                          Str :$singleDatasetCode!,\n                          Str :$multiDatasetCode!,\n                          Str :$dataScalesAndAxesCode!,\n                          Str :$dataAndScalesCode!\n                          "
+      ]
+    },
+    {
+      "name": "js-d3-list-line-plot3d",
+      "public_signatures": [
+        "$data, *%args"
+      ],
+      "delegates_to": "JavaScript::D3::Plots3D::ListLinePlot3D",
+      "notes": "Sets default-type => line."
+    },
+    {
+      "name": "js-d3-list-plot",
+      "public_signatures": [
+        "$data, *%args"
+      ],
+      "delegates_to": "JavaScript::D3::Plots::ListPlot"
+    },
+    {
+      "name": "js-d3-list-plot3d",
+      "public_signatures": [
+        "$data, *%args"
+      ],
+      "alias_of": "js-d3-list-point-plot3d"
+    },
+    {
+      "name": "js-d3-list-point-plot3d",
+      "public_signatures": [
+        "$data, *%args"
+      ],
+      "delegated_signatures": [
+        "$data where $data ~~ Seq, *%args",
+        "$data where is-positional-of-lists($data, 4), *%args",
+        "$data where is-positional-of-lists($data, 3), *%args",
+        "@data where @data.all ~~ Map,\n                         Str :$background = 'White',\n                         Str :color(:$stroke-color) = 'SteelBlue',\n                         :color-palette(:$color-scheme) is copy = Whatever,\n                         :$width = 600,\n                         :$height = 400,\n                         Str :plot-label(:$title) = '',\n                         UInt :plot-label-font-size(:$title-font-size) = 16,\n                         Str :plot-label-color(:$title-color) = 'Black',\n                         Str:D :x-label(:$x-axis-label) = '',\n                         :x-label-color(:$x-axis-label-color) is copy = Whatever,\n                         :x-label-font-size(:$x-axis-label-font-size) is copy = Whatever,\n                         Str:D :y-label(:$y-axis-label) = '',\n                         :y-label-color(:$y-axis-label-color) is copy = Whatever,\n                         :y-label-font-size(:$y-axis-label-font-size) is copy = Whatever,\n                         Str:D :z-label(:$z-axis-label) = '',\n                         :z-label-color(:$z-axis-label-color) is copy = Whatever,\n                         :z-label-font-size(:$z-axis-label-font-size) is copy = Whatever,\n                         :$tooltip = Whatever,\n                         Str :$tooltip-background-color = 'Black',\n                         Str :$tooltip-color = 'White',\n                         :$box-ratios is copy = [1, 1, 0.4], #= The value [x, y, z] gives the side-length ratios of the corresponding axes.\n                         :$view-point is copy = Whatever, #= The value [x,y,z] gives the position of the view point relative to the center of the three-dimensional box that contains the objects.\n                         :$view-vertical is copy = Whatever, #= Specifies what direction in scaled coordinates should be vertical in the final image.\n                         :$margins is copy = Whatever,\n                         :$legends = Whatever,\n                         Bool:D :zoom(:$zooming-enabled) = False,\n                         Bool:D :$axes = False,\n                         Bool:D :$boxed = True,\n                         Bool:D :$ticks = True,\n                         Numeric :$point-size = 6,\n                         Numeric :$stroke-width = 1.5,\n                         Str:D :$default-type = 'line',\n                         Str :$format = 'jupyter',\n                         :$div-id = Whatever,\n                          "
+      ]
+    },
+    {
+      "name": "js-d3-matrix-plot",
+      "public_signatures": [
+        "$data, *%args"
+      ],
+      "delegated_signatures": [
+        "@data,\n                     :$width is copy = Whatever,\n                     :$height is copy = Whatever,\n                     :$margins = 2,\n                     :$background = 'none',\n                     :$grid-lines is copy = Whatever,\n                     :$round-corners is copy = Whatever,\n                     *%args"
+      ]
+    },
+    {
+      "name": "js-d3-named-colors",
+      "public_signatures": [
+        "",
+        "*@names, Bool:D :p(:$pairs) = False"
+      ],
+      "purpose": "Returns the named HTML/CSS color map, or requested colors; :pairs retains requested names."
+    },
+    {
+      "name": "js-d3-random-koch-curve",
+      "public_signatures": [
+        "$data, *%args"
+      ],
+      "delegated_signatures": [
+        "Whatever, $possdist, $widthdist, $heightdist, Int $n",
+        "@pts, $possdist, $widthdist, $heightdist, Int $n"
+      ]
+    },
+    {
+      "name": "js-d3-random-mandala",
+      "public_signatures": [
+        "$data = Whatever, :$radius = 1, :$rotational-symmetry-order = 6, :$number-of-seed-elements = Whatever, :$connecting-function = curveBasis, :$symmetric-seed = True, :$stroke, :$stroke-width, :$fill, :$color-scheme = schemeSet2, :$background, :$width = 300, :$height = 300, :$title, :$x-axis-label, :$y-axis-label, :$grid-lines = False, :$margins, :$axes = False, :$count = 1, :$format = jupyter, :$div-id"
+      ],
+      "notes": "The source declares Raku type constraints and aliases; consult the installed source when they matter."
+    },
+    {
+      "name": "js-d3-random-mondrian",
+      "public_signatures": [
+        ":$width = 800, :$height, :n(:$max-iterations) = 7, :$jitter = 0, :d(:dist(:$distribution)), :$color-scheme, :stroke(:$stroke-color) = Black, :$stroke-width = 4, :fill-color(:$color-palette), :$background = White, :$margins, :$format = jupyter, :$div-id, *%args"
+      ]
+    },
+    {
+      "name": "js-d3-random-scribble",
+      "public_signatures": [
+        "$data, *%args",
+        ":$number-of-strokes = 120, :$ordered-stroke-points = True, :$rotation-angle, :$envelope-functions, :$connecting-function = curveBasis, :$stroke, :$stroke-width, :$fill, :$background, :$gradient-colors = False, :$width = 300, :$height = 300, :$title, :$x-axis-label, :$y-axis-label, :$grid-lines = False, :$margins, :$axes = False, :$count = 1, :$format = jupyter, :$div-id"
+      ]
+    }
+  ]
+}
