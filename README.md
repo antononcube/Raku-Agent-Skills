@@ -18,14 +18,14 @@ The skills follow the guidelines of [agentskills.io](https://agentskills.io).
 
 - [raku-llm-pipelines](./skills/raku-llm-pipelines) : LLM pipelines created with ["LLM::Functions"](https://github.com/antononcube/Raku-LLM-Functions) and ["LLM::Functions"](https://github.com/antononcube/Raku-LLM-Prompts). 
 - [raku-graph-creation-and-plottung](./skills/raku-graph-creation-and-plotting) : Graphs (networks) creation and plotting with ["Graph"](["LLM::Functions"](https://github.com/antononcube/Raku-Graph) and ["JavaScript::D3"](["LLM::Functions"](https://github.com/antononcube/Raku-JavaScript-D3). 
-- [raku-gui-making](./skills/raku-gui-making) : *most likely to be based on ["GUI::Wings](https://github.com/ash/raku-modules/tree/main/GUI-Wings).
+- [raku-gui-making](./skills/raku-gui-making) : *most likely to be based on ["GUI::Wings](https://github.com/ash/raku-modules/tree/main/GUI-Wings)*.
 
 ---
 
 ## Making skills
 
-Skills can be manually (human mentally) made or with the use of AI-agent. 
-See the [agentskills.io](https://agentskills.io) [specification](https://agentskills.io/specification), [best practices](https://agentskills.io/skill-creation/best-practices), and [evaluation guidelines](https://agentskills.io/skill-creation/evaluating-skills).
+Skills can be manually (human mentally) made or with the use of AI-agents. 
+See agentskills.io's [specification](https://agentskills.io/specification), [best practices](https://agentskills.io/skill-creation/best-practices), and [evaluation guidelines](https://agentskills.io/skill-creation/evaluating-skills).
 
 The package ["LLM::Resources"](https://github.com/antononcube/Raku-LLM-Resources), [AAp7], provides class `LLM::Resources::AgentSkillValidator` and the CLI script `agent-skill-validation`. 
 
