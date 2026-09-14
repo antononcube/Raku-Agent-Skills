@@ -10,6 +10,7 @@ The skills follow the guidelines of [agentskills.io](https://agentskills.io).
 
 - [raku-h2o-client-data-manipulation](./skills/raku-h2o-client-data-manipulation) : data wrangling with ["Math::NumberTheory"](https://github.com/antononcube/Raku-H2O-Client)
 - [raku-javascript-d3-plots-and-charts](./skills/raku-javascript-d3-plots-and-charts) : plots and charts with ["JavaScript::D3"](https://github.com/antononcube/Raku-JavaScript-D3)
+- [raku-javascript-google-charts](./skills/raku-javascript-google-charts) : plots and charts with ["JavaScript::Google::Charts"](https://github.com/antononcube/Raku-JavaScript-Google-Charts)
 - [raku-literature-search-arxiv](./skills/raku-literature-search-arxiv) : arXiv literature search with Raku ecosystem packages.
 - [raku-llm-graph-making](./skills/raku-llm-graph-making) : creation of LLM-graphs provided by ["LLM::Graph"](https://github.com/antononcube/Raku-LLM-Graph)
 - [raku-number-theory-computations](./skills/raku-number-theory-computations) : number theory computations with ["Math::NumberTheory"](https://github.com/antononcube/Raku-Math-NumberTheory)
