@@ -28,3 +28,14 @@ Suggested improvements to `subs.json` itself:
 - Preserve exact Raku signature text alongside structured summaries; parsing every Raku signature into JSON fields would be brittle.
 
 So: it is “good” as a raw signature source, but `sub.json` is the better entry point for an agent or person choosing a plotting routine.
+
+----
+
+## raku-javascript-google-charts
+
+The following prompt was given to Codex with "GPT-5.6-Terra" in the directory of the package "JavaScript::Google::Charts": 
+
+```text
+Look into the README file and generate into the directory "raku-javascript-google-charts" the AI-agent Skill "raku-javascript-google-charts" for using the Raku package "JavaScript::Google::Charts". 
+Make sure to include instructions for making plots and charts in Jupyter, in stand alone HTML files, and via the package CLI script.
+```
