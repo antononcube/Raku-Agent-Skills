@@ -20,6 +20,15 @@ The skills follow the guidelines of [agentskills.io](https://agentskills.io).
 - [raku-graph-creation-and-plottung](./skills/raku-graph-creation-and-plotting) : Graphs (networks) creation and plotting with ["Graph"](["LLM::Functions"](https://github.com/antononcube/Raku-Graph) and ["JavaScript::D3"](["LLM::Functions"](https://github.com/antononcube/Raku-JavaScript-D3). 
 - [raku-gui-making](./skills/raku-gui-making) : *most likely to be based on ["GUI::Wings](https://github.com/ash/raku-modules/tree/main/GUI-Wings).
 
+---
+
+## Making skills
+
+Skills can be manually (human mentally) made or with the use of AI-agent. 
+See the [agentskills.io](https://agentskills.io) [specification](https://agentskills.io/specification), [best practices](https://agentskills.io/skill-creation/best-practices), and [evaluation guidelines](https://agentskills.io/skill-creation/evaluating-skills).
+
+The package ["LLM::Resources"](https://github.com/antononcube/Raku-LLM-Resources), [AAp7], provides class `LLM::Resources::AgentSkillValidator` and the CLI script `agent-skill-validation`. 
+
 --- 
 
 ## References
@@ -61,6 +70,11 @@ The skills follow the guidelines of [agentskills.io](https://agentskills.io).
 [GitHub/antononcube](https://github.com/antononcube).
 
 [AAp7] Anton Antonov,
+[LLM::Resources, Raku package](https://github.com/antononcube/Raku-LLM-Resources),
+(2026),
+[GitHub/antononcube](https://github.com/antononcube).
+
+[AAp8] Anton Antonov,
 [Math::NumberTheory, Raku package](https://github.com/antononcube/Raku-Math-NumberTheory),
 (2025-2026),
 [GitHub/antononcube](https://github.com/antononcube).
