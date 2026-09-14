@@ -27,7 +27,7 @@ The skills follow the guidelines of [agentskills.io](https://agentskills.io).
 Skills can be manually (human mentally) made or with the use of AI-agents. 
 See agentskills.io's [specification](https://agentskills.io/specification), [best practices](https://agentskills.io/skill-creation/best-practices), and [evaluation guidelines](https://agentskills.io/skill-creation/evaluating-skills).
 
-The package ["LLM::Resources"](https://github.com/antononcube/Raku-LLM-Resources), [AAp7], provides class `LLM::Resources::AgentSkillValidator` and the CLI script `agent-skill-validation`. 
+The package ["LLM::Resources"](https://github.com/antononcube/Raku-LLM-Resources), [AAp7], provides the class `LLM::Resources::AgentSkillValidator` and CLI script `agent-skill-validation` that can be used for to validate AI-agent skills.
 
 --- 
 
