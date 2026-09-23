@@ -1,0 +1,553 @@
+# This file contains the Bulgarian localization of the
+# Raku Programming Language.
+#
+# CONTRIBUTORS:
+#
+# Andrew Shitov (Russian version)
+# Anton Antonov (Bulgarian version, translated from the Russian version)
+#
+# This file is the source the two modules are generated FROM.  After
+# changing anything below, regenerate them from the distribution root with
+# the script the L10N distribution installs:
+#
+#     update-localization
+#
+# It needs Rakudo: Raku++ runs the modules generated here but cannot load
+# L10N itself, stopping at `use L10N` with "the module registered no slang".
+# The script builds both modules from the lines below and then precompiles
+# the slang to check that what it wrote works.
+
+# KEY             TRANSLATION
+adverb-pc-delete  изтрий
+adverb-pc-exists  съществува
+adverb-pc-k       к
+adverb-pc-kv      кс
+adverb-pc-p       п
+adverb-pc-v       с
+
+# KEY                 TRANSLATION
+adverb-rx-continue    продължи
+adverb-rx-ex          изч
+adverb-rx-exhaustive  изчерпателно
+adverb-rx-nd          ти
+adverb-rx-nth         ти
+adverb-rx-ov          прип
+adverb-rx-overlap     припокриване
+adverb-rx-ratchet     тресчотка
+adverb-rx-rd          ти
+adverb-rx-st          ти
+adverb-rx-to          до
+adverb-rx-x           пъти
+
+# KEY           TRANSLATION
+block-default   умълчано
+block-else      иначе
+block-elsif     иначеако
+block-for       за
+block-given     дадено
+block-if        ако
+block-loop      цикъл
+block-orwith    илис
+block-repeat    повтори
+block-unless    аконе
+block-until     докатоне
+block-when      когато
+block-whenever  всекипът
+block-while     докато
+block-with      с
+block-without   без
+
+# KEY             TRANSLATION
+constraint-where  където
+
+# KEY                  TRANSLATION
+core-all               всички
+core-antipair          антидвойка
+core-antipairs         антидвойки
+core-any               произволен
+core-append            добави
+core-await             изчакай
+
+# KEY          TRANSLATION
+core-bag       торба
+core-bail-out  отказвам-се
+core-bless     благослови
+
+# KEY              TRANSLATION
+core-can-ok        може-ок
+core-categorize    категоризирай
+core-ceiling       таван
+core-chars         символи
+core-chdir         смени-директория
+core-chomp         отрежи-края
+core-chop          отрежи
+core-chr           къмсимвол
+core-chrs          къмсимволи
+core-classify      класифицирай
+core-close         затвори
+core-cmp-ok        сравни-ок
+core-codes         кодове
+core-comb          среши
+core-combinations  комбинации
+core-contains      съдържа
+core-cross         кръстосано
+
+# KEY         TRANSLATION
+core-decode   декодирай
+core-defined  определено
+core-diag     диагностика
+core-die      умри
+core-dies-ok  умира-ок
+core-dir      директория
+core-does-ok  прави-ок
+core-done     готово
+
+# KEY               TRANSLATION
+core-elems          елементи
+core-emit           излъчи
+core-encode         кодирай
+core-end            край
+core-ends-with      завършва-с
+core-eval-dies-ok   eval-умира-ок
+core-eval-lives-ok  eval-живее-ок
+core-exit           излез
+
+# KEY              TRANSLATION
+core-fail          провали-се
+core-fails-like    проваля-се-като
+core-first         първи
+core-flat          плосък
+core-flip          обърни
+core-floor         под
+core-flunk         неиздържан
+
+# KEY      TRANSLATION
+core-get   вземи
+core-getc  вземи-символ
+core-gist  същност
+core-grep  избери
+
+# KEY      TRANSLATION
+core-hash  хеш
+core-head  глава
+
+# KEY           TRANSLATION
+core-indent     отстъп
+core-index      индекс
+core-indices    индекси
+core-invert     обърни
+core-is         е
+core-is-approx  е-приблизително
+core-is-deeply  е-точно
+core-is-prime   е-просто
+core-isa-ok     тип-е-ок
+core-isnt       не-е
+core-item       елемент
+
+# KEY      TRANSLATION
+core-join  свържи
+
+# KEY      TRANSLATION
+core-key   ключ
+core-keys  ключове
+core-kv    кс
+
+# KEY          TRANSLATION
+core-last      прекъсни
+core-lc        малки
+core-like      прилича
+core-lines     редове
+core-link      връзка
+core-list      списък
+core-lives-ok  живее-ок
+
+# KEY        TRANSLATION
+core-make    направи
+core-map     изобрази
+core-match   съвпадение
+core-max     макс
+core-min     мин
+core-minmax  минмакс
+core-mix     смес
+core-mkdir   създай-директория
+core-move    премести
+
+# KEY            TRANSLATION
+core-new         нов
+core-next        следващ
+core-nok         неок
+core-none        никакъв
+core-not         не
+core-note        отбележи
+
+# KEY      TRANSLATION
+core-one   един
+core-open  отвори
+core-ord   къмкод
+core-ords  къмкодове
+
+# KEY              TRANSLATION
+core-pair          двойка
+core-pairs         двойки
+core-pass          издържан
+core-permutations  пермутации
+core-pick          набери
+core-plan          план
+core-pop           извади
+core-prepend       добави-отпред
+core-print         отпечатай
+core-printf        отпечатайф
+core-proceed       продължи
+core-prompt        попитай
+core-push          вмъкни
+core-put           изведи
+
+# KEY            TRANSLATION
+core-rand        случайно
+core-redo        отново
+core-reduce      свий
+core-repeated    повторени
+core-return      върни
+core-return-rw   върни-чз
+core-reverse     обратно
+core-rindex      риндекс
+core-rmdir       изтрий-директория
+core-roll        нахвърли
+core-roots       корени
+core-rotate      завърти
+core-round       закръгли
+core-roundrobin  покръг
+core-run         изпълни
+
+# KEY             TRANSLATION
+core-say          кажи
+core-set          множество
+core-shell        обвивка
+core-shift        премести
+core-sign         знак
+core-skip         пропусни
+core-skip-rest    пропусни-всичко
+core-sleep        спи
+core-sleep-timer  будилник
+core-sleep-until  спи-до
+core-slurp        прочети
+core-snitch       надникни
+core-so           така
+core-sort         сортирай
+core-splice       присъедини
+core-split        раздели
+core-sprintf      форматирай
+core-spurt        запиши
+core-sqrt         корен
+core-squish       смачкай
+core-srand        семе
+core-starts-with  започва-с
+core-subst        замени
+core-substr       подниз
+core-subtest      подтест
+core-succeed      успей
+core-sum          сума
+core-symlink      симвръзка
+
+# KEY               TRANSLATION
+core-tail           опашка
+core-take           вземи
+core-take-rw        вземи-чз
+core-throws-like    хвърля-като
+core-todo           за-правене
+core-trans          преведи
+core-trim           изрежи
+core-trim-leading   изрежи-отляво
+core-trim-trailing  изрежи-отдясно
+core-truncate       съкрати
+
+# KEY          TRANSLATION
+core-uc        главни
+core-unique    уникални
+core-unlike    не-прилича
+core-unlink    отвържи
+core-unshift   вмъкни-отпред
+core-use-ok    използвай-ок
+
+# KEY        TRANSLATION
+core-value   стойност
+core-values  стойности
+
+# KEY          TRANSLATION
+core-warn   предупреди
+core-words  думи
+
+# KEY     TRANSLATION
+core-zip  цип
+
+# KEY                   TRANSLATION
+enum-Broken             Нарушено
+enum-False              Лъжа
+enum-Kept               Изпълнено
+enum-Less               По-малко
+enum-More               Повече
+enum-Planned            Планирано
+enum-Same               Равно
+enum-True               Истина
+
+# KEY             TRANSLATION
+infix-(cont)      (съдържа)
+infix-(elem)      (елемент)
+infix-after       след
+infix-and         и
+infix-andthen     итогава
+infix-before      преди
+infix-but         но
+infix-cmp         сравни
+infix-div         раздели
+infix-does        прави
+infix-eq          равно
+infix-ge          по-голяморавно
+infix-gt          по-голямо
+infix-le          по-малкоравно
+infix-leg         мрг
+infix-lt          по-малко
+infix-max         макс
+infix-min         мин
+infix-minmax      минмакс
+infix-mod         мод
+infix-ne          неравно
+infix-notandthen  неитогава
+infix-or          или
+infix-orelse      илииначе
+
+# KEY             TRANSLATION
+modifier-for      за
+modifier-given    дадено
+modifier-if       ако
+modifier-unless   аконе
+modifier-until    докато
+modifier-when     когато
+modifier-while    докато
+modifier-with     с
+modifier-without  без
+
+# KEY        TRANSLATION
+multi-multi  мулти
+multi-only   само
+multi-proto  прото
+
+# KEY           TRANSLATION
+named-absolute  абсолютен
+named-actions   действия
+named-append    добави
+
+# KEY             TRANSLATION
+named-chomp       отрежи
+named-close       затвори
+named-completely  напълно
+named-continue    продължи
+named-count       брой
+named-create      създай
+
+# KEY           TRANSLATION
+named-date      дата
+named-day       ден
+named-delete    изтрий
+
+# KEY             TRANSLATION
+named-elems       елементи
+named-encoding    кодировка
+named-end         край
+named-every       всеки
+named-exclusive   изключително
+named-exhaustive  изчерпателно
+named-expires     изтича
+
+# KEY            TRANSLATION
+named-filename   име-на-файл
+named-formatter  форматиращ
+
+# KEY         TRANSLATION
+named-global  глобално
+
+# KEY       TRANSLATION
+named-host  хост
+named-hour  час
+
+# KEY             TRANSLATION
+named-in    през
+named-into  във
+
+# KEY         TRANSLATION
+named-joiner  съединител
+
+# KEY      TRANSLATION
+named-k    к
+named-key  ключ
+named-kv   кс
+
+# KEY            TRANSLATION
+named-listen  слушай
+
+# KEY         TRANSLATION
+named-match   съвпадение
+named-merge   слей
+named-minute  минута
+named-mode    режим
+named-month   месец
+
+# KEY               TRANSLATION
+named-name  име
+named-nd    ти
+named-nth   ти
+
+# KEY             TRANSLATION
+named-off  изкл
+named-out  изход
+
+# KEY          TRANSLATION
+named-partial  частично
+named-parts    части
+named-port     порт
+
+# KEY              TRANSLATION
+named-rd           ти
+named-real         реален
+named-replacement  замяна
+named-rw           чз
+
+# KEY              TRANSLATION
+named-second       секунда
+named-seconds      секунди
+named-size         размер
+named-squash       смачкай
+named-st           ти
+named-status       статус
+named-subscript    долен-индекс
+named-superscript  горен-индекс
+
+# KEY               TRANSLATION
+named-th        ти
+named-times     пъти
+named-timezone  часова-зона
+named-truncate  съкрати
+
+# KEY          TRANSLATION
+named-v      с
+named-value  стойност
+
+# KEY                    TRANSLATION
+named-where  където
+
+# KEY    TRANSLATION
+named-x  пъти
+
+# KEY       TRANSLATION
+named-year  година
+
+# KEY            TRANSLATION
+package-class    клас
+package-grammar  граматика
+package-module   модул
+package-package  пакет
+package-role     роля
+
+# KEY           TRANSLATION
+phaser-CATCH    ЛОВИ
+phaser-CLOSE    ЗАТВАРЯНЕ
+phaser-CONTROL  УПРАВЛЕНИЕ
+phaser-END      КРАЙ
+phaser-ENTER    ВХОД
+phaser-FIRST    ПЪРВИ
+phaser-KEEP     УСПЕХ
+phaser-LAST     ПОСЛЕДЕН
+phaser-LEAVE    ИЗХОД
+phaser-NEXT     СЛЕДВАЩ
+phaser-POST     СЛЕД
+phaser-PRE      ПРЕДИ
+phaser-QUIT     ПРЕКЪСВАНЕ
+phaser-UNDO     ОТМЯНА
+
+# KEY                      TRANSLATION
+pragma-fatal  фатално
+pragma-lib    библиотека
+pragma-strict строго
+pragma-trace  проследяване
+
+# KEY       TRANSLATION
+prefix-not  не
+prefix-so   така
+
+# KEY              TRANSLATION
+routine-method     метод
+routine-regex      реджекс
+routine-rule       правило
+routine-sub        функция
+routine-submethod  подметод
+routine-token      лексема
+
+# KEY           TRANSLATION
+scope-anon      анонимен
+scope-augment   допълни
+scope-constant  константа
+scope-has       има
+scope-HAS       ИМА
+scope-my        моя
+scope-our       наш
+scope-state     състояние
+scope-unit      единица
+
+# KEY                TRANSLATION
+stmt-prefix-also     също
+stmt-prefix-do       изпълни
+stmt-prefix-eager    нетърпеливо
+stmt-prefix-gather   събери
+stmt-prefix-hyper    хипер
+stmt-prefix-lazy     лениво
+stmt-prefix-quietly  тихо
+stmt-prefix-race     надпреварвай-се
+stmt-prefix-react    реагирай
+stmt-prefix-sink     вникъде
+stmt-prefix-start    започни
+stmt-prefix-supply   доставяй
+stmt-prefix-try      опитай
+
+# KEY      TRANSLATION
+term-now   сега
+term-rand  случайно
+term-self  себеси
+term-time  време
+
+# KEY                           TRANSLATION
+trait-is-built                  построено
+trait-is-copy                   копие
+trait-is-default                подразбиране
+trait-is-DEPRECATED             ОСТАРЯЛО
+trait-is-equiv                  еквив
+trait-is-export                 експорт
+trait-is-hidden-from-backtrace  скрит-от-трасировката
+trait-is-hidden-from-USAGE      скрит-от-помощта
+trait-is-implementation-detail  детайл-реализация
+trait-is-looser                 по-слабо
+trait-is-nodal                  възлово
+trait-is-pure                   чисто
+trait-is-raw                    сурово
+trait-is-rw                     четене-запис
+trait-is-test-assertion         тестово-твърдение
+trait-is-tighter                по-строго
+
+# KEY             TRANSLATION
+traitmod-does     прави
+traitmod-handles  предава
+traitmod-hides    скрива
+traitmod-is       е
+traitmod-of       тип
+traitmod-returns  връща
+traitmod-trusts   доверява-се
+
+# KEY         TRANSLATION
+typer-enum    изброяване
+typer-subset  подмножество
+
+# KEY        TRANSLATION
+use-import   импортирай
+use-need     трябва
+use-no       изключи
+use-require  изискай
+use-use      използвай
