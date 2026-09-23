@@ -51,15 +51,15 @@ named-encoding кодировка
 Use the source table's existing grouping and key names as the authority.
 Common families include:
 
-| Need | Key family / examples |
-| --- | --- |
-| Control constructs | `block-if`, `block-for`, `modifier-while` |
-| Built-in routines and methods | `core-say`, `core-map`, `core-elems` |
-| Word operators | `infix-and`, `infix-eq`, `prefix-not` |
-| Declarations | `scope-my`, `package-class`, `routine-method` |
-| Traits and statement prefixes | `trait-is-rw`, `traitmod-is`, `stmt-prefix-try` |
-| Named arguments and adverbs | `named-encoding`, `named-delete`, `adverb-rx-exhaustive` |
-| Compile-time and import words | `phaser-ENTER`, `pragma-strict`, `use-use` |
+| Need                          | Key family / examples                                    |
+|-------------------------------|----------------------------------------------------------|
+| Control constructs            | `block-if`, `block-for`, `modifier-while`                |
+| Built-in routines and methods | `core-say`, `core-map`, `core-elems`                     |
+| Word operators                | `infix-and`, `infix-eq`, `prefix-not`                    |
+| Declarations                  | `scope-my`, `package-class`, `routine-method`            |
+| Traits and statement prefixes | `trait-is-rw`, `traitmod-is`, `stmt-prefix-try`          |
+| Named arguments and adverbs   | `named-encoding`, `named-delete`, `adverb-rx-exhaustive` |
+| Compile-time and import words | `phaser-ENTER`, `pragma-strict`, `use-use`               |
 
 Use separate `block-*` and `modifier-*` entries even when the localized word
 is identical. Check nearby semantic entries before assigning short forms; in
@@ -122,3 +122,12 @@ L10N translates grammar input and AST deparsing only. Do not represent
 localized errors, `.gist` output, print output such as `True`, or runtime
 library text as supported by the translation table. Treat those as separate
 localization projects.
+
+## Dedicated executables
+
+- `bulku` is the Bulgarian-localized Raku code executor.
+- `rusku` is the Russian-localized Raku code executor. 
+- `bulku` and `rusku` re-run the interpreter that invoked it with `-ML10N::BG` and `-ML10N::RU` respectively.
+  - So the slang is in place before the file is parsed and a program needs no `use` line of its own.
+- The two ways of running a localized program are exclusive. 
+  - Under `bulku` the file is Bulgarian from its first character, `use` included — it is spelled `използвай` there.
