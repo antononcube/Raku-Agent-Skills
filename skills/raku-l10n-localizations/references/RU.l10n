@@ -1,20 +1,7 @@
 # This file contains the Russian localization of the
 # Raku Programming Language.
 #
-# CONTRIBUTORS:
-#
-# Andrew Shitov
-#
-# This file is the source the two modules are generated FROM.  After
-# changing anything below, regenerate them from the distribution root with
-# the script the L10N distribution installs:
-#
-#     update-localization
-#
-# It needs Rakudo: Raku++ runs the modules generated here but cannot load
-# L10N itself, stopping at `use L10N` with "the module registered no slang".
-# The script builds both modules from the lines below and then precompiles
-# the slang to check that what it wrote works.
+# CONTRIBUTORS: Andrew Shitov
 
 # KEY             TRANSLATION
 adverb-pc-delete  удали
