@@ -39,3 +39,13 @@ The following prompt was given to Codex with "GPT-5.6-Terra" in the directory of
 Look into the README file and generate into the directory "raku-javascript-google-charts" the AI-agent Skill "raku-javascript-google-charts" for using the Raku package "JavaScript::Google::Charts". 
 Make sure to include instructions for making plots and charts in Jupyter, in stand alone HTML files, and via the package CLI script.
 ```
+
+----
+
+## raku-numerical-integration
+
+```text
+Create the AI-agent skill "raku-numerical-integration" in the directory "./Raku-Agent-Skills/skills/raku-numerical-integration" that supports and guides users to do numerical integration workflows using 
+the Raku packages "Math::NIntegrate" and "DSL::English::IntegrationWorkflows". For that examine the corresponding
+directories "../Raku-Math-NIntegrate/" and "../Raku-DSL-English-IntegrationWorkflows/".
+```
