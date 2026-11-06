@@ -8,7 +8,7 @@ The skills follow the guidelines of [agentskills.io](https://agentskills.io).
 
 ## Skills
 
-- [raku-h2o-client-data-manipulation](./skills/raku-h2o-client-data-manipulation) : data wrangling with ["Math::NumberTheory"](https://github.com/antononcube/Raku-H2O-Client)
+- [raku-h2o-client-data-manipulation](./skills/raku-h2o-client-data-manipulation) : data wrangling with ["H2O::Client"](https://github.com/antononcube/Raku-H2O-Client)
 - [raku-javascript-d3-plots-and-charts](./skills/raku-javascript-d3-plots-and-charts) : plots and charts with ["JavaScript::D3"](https://github.com/antononcube/Raku-JavaScript-D3)
 - [raku-javascript-google-charts](./skills/raku-javascript-google-charts) : plots and charts with ["JavaScript::Google::Charts"](https://github.com/antononcube/Raku-JavaScript-Google-Charts)
 - [raku-l10n-localizations](./skills/raku-l10n-localizations) : Raku keywords localizations to Bulgarian and Russian.
