@@ -49,3 +49,15 @@ Create the AI-agent skill "raku-numerical-integration" in the directory "./Raku-
 the Raku packages "Math::NIntegrate" and "DSL::English::IntegrationWorkflows". For that examine the corresponding
 directories "../Raku-Math-NIntegrate/" and "../Raku-DSL-English-IntegrationWorkflows/".
 ```
+
+----
+
+## raku-functional-parsers
+
+```text
+Create the AI-agent skill "raku-functional-parsers" in the directory "./Raku-Agent-Skills/skills/raku-functional-parsers" that supports and guides users to implement parsers using the Raku package "FunctionalParsers" and use Extended Backus-Naur Form (EBNF) grammars to specify and generate parsers with that package. See the README.md and examples code in "./Raku-Agent-Skills/skills/raku-functional-parsers/references".
+```
+
+```text
+See the two new files in the "references" directory: "Parsers-table.md" and "Parsers-documentation.md". They represent the same information. Improve the skill and suggest which files or the "references" directory to remove as redundant.
+```
