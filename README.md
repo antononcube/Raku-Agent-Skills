@@ -20,7 +20,7 @@ The skills follow the guidelines of [agentskills.io](https://agentskills.io).
 
 ### Coming soon...
 
-- [raku-llm-pipelines](./skills/raku-llm-pipelines) : LLM pipelines created with ["LLM::Functions"](https://github.com/antononcube/Raku-LLM-Functions) and ["LLM::Functions"](https://github.com/antononcube/Raku-LLM-Prompts). 
+- [raku-llm-pipelines](./skills/raku-llm-pipelines) : LLM pipelines created with ["LLM::Functions"](https://github.com/antononcube/Raku-LLM-Functions) and ["LLM::Prompts"](https://github.com/antononcube/Raku-LLM-Prompts). 
 - [raku-graph-creation-and-plottung](./skills/raku-graph-creation-and-plotting) : Graphs (networks) creation and plotting with ["Graph"](https://github.com/antononcube/Raku-Graph) and ["JavaScript::D3"](https://github.com/antononcube/Raku-JavaScript-D3). 
 - [raku-gui-making](./skills/raku-gui-making) : *most likely to be based on ["GUI::Wings"](https://github.com/ash/raku-modules/tree/main/GUI-Wings)*.
 
