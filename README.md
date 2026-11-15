@@ -8,6 +8,7 @@ The skills follow the guidelines of [agentskills.io](https://agentskills.io).
 
 ## Skills
 
+- [raku-functional-parsers](./skills/raku-functional-parsers) : parser creation with ["FunctionalParsers"](https://github.com/antononcube/Raku-FunctionalParsers)
 - [raku-h2o-client-data-manipulation](./skills/raku-h2o-client-data-manipulation) : data wrangling with ["H2O::Client"](https://github.com/antononcube/Raku-H2O-Client)
 - [raku-javascript-d3-plots-and-charts](./skills/raku-javascript-d3-plots-and-charts) : plots and charts with ["JavaScript::D3"](https://github.com/antononcube/Raku-JavaScript-D3)
 - [raku-javascript-google-charts](./skills/raku-javascript-google-charts) : plots and charts with ["JavaScript::Google::Charts"](https://github.com/antononcube/Raku-JavaScript-Google-Charts)
@@ -15,6 +16,7 @@ The skills follow the guidelines of [agentskills.io](https://agentskills.io).
 - [raku-literature-search-arxiv](./skills/raku-literature-search-arxiv) : arXiv literature search with Raku ecosystem packages.
 - [raku-llm-graph-making](./skills/raku-llm-graph-making) : creation of LLM-graphs provided by ["LLM::Graph"](https://github.com/antononcube/Raku-LLM-Graph)
 - [raku-number-theory-computations](./skills/raku-number-theory-computations) : number theory computations with ["Math::NumberTheory"](https://github.com/antononcube/Raku-Math-NumberTheory)
+- [raku-numerical-integration](./skills/raku-numerical-integration) : numerical integration computations with ["Math::NIntegrate"](https://github.com/antononcube/Raku-Math-NIntegrate)
 
 ### Coming soon...
 
@@ -29,7 +31,13 @@ The skills follow the guidelines of [agentskills.io](https://agentskills.io).
 Skills can be manually (human mentally) made or with the use of AI-agents. 
 See agentskills.io's [specification](https://agentskills.io/specification), [best practices](https://agentskills.io/skill-creation/best-practices), and [evaluation guidelines](https://agentskills.io/skill-creation/evaluating-skills).
 
-The package ["LLM::Resources"](https://github.com/antononcube/Raku-LLM-Resources), [AAp7], provides the class `LLM::Resources::AgentSkillValidator` and CLI script `agent-skill-validation` that can be used for to validate AI-agent skills.
+The package ["LLM::Resources"](https://github.com/antononcube/Raku-LLM-Resources), [AAp8], provides the class `LLM::Resources::AgentSkillValidator` and CLI script `agent-skill-validation` that can be used for to validate AI-agent skills. 
+
+---
+
+## Using skills in Raku sessions
+
+["LLM::Resources"](https://github.com/antononcube/Raku-LLM-Resources), [AAp8], provides integration of AI-agent skills with ["LLM::Functions"](https://github.com/antononcube/Raku-LLM-Functions), [AAp5], -- see the notebook ["LLM-synthesis-via-skills.ipynb"](https://github.com/antononcube/Raku-LLM-Resources/blob/main/docs/LLM-synthesis-via-skills.ipynb).
 
 --- 
 
@@ -42,41 +50,51 @@ The package ["LLM::Resources"](https://github.com/antononcube/Raku-LLM-Resources
 ### Packages
 
 [AAp1] Anton Antonov,
+[FunctionalParsers, Raku package](https://github.com/antononcube/Raku-FunctionalParsers),
+(2023-2026),
+[GitHub/antononcube](https://github.com/antononcube).
+
+[AAp2] Anton Antonov,
 [H2O::Client, Raku package](https://github.com/antononcube/Raku-H2O-Client),
 (2025-2026),
 [GitHub/antononcube](https://github.com/antononcube).
 
-[AAp2] Anton Antonov,
+[AAp3] Anton Antonov,
 [Graph, Raku package](https://github.com/antononcube/Raku-Graph),
 (2024-2026),
 [GitHub/antononcube](https://github.com/antononcube).
 
-[AAp3] Anton Antonov,
+[AAp4] Anton Antonov,
 [JavaScript::D3, Raku package](https://github.com/antononcube/Raku-JavaScript-D3),
 (2021-2026),
 [GitHub/antononcube](https://github.com/antononcube).
 
-[AAp4] Anton Antonov,
+[AAp5] Anton Antonov,
 [LLM::Functions, Raku package](https://github.com/antononcube/Raku-LLM-Functions),
 (2023-2026),
 [GitHub/antononcube](https://github.com/antononcube).
 
-[AAp5] Anton Antonov,
+[AAp6] Anton Antonov,
 [LLM::Graph, Raku package](https://github.com/antononcube/Raku-LLM-Graph),
 (2025-2026),
 [GitHub/antononcube](https://github.com/antononcube).
 
-[AAp6] Anton Antonov,
+[AAp7] Anton Antonov,
 [LLM::Prompts, Raku package](https://github.com/antononcube/Raku-LLM-Prompts),
 (2023-2026),
 [GitHub/antononcube](https://github.com/antononcube).
 
-[AAp7] Anton Antonov,
+[AAp8] Anton Antonov,
 [LLM::Resources, Raku package](https://github.com/antononcube/Raku-LLM-Resources),
 (2026),
 [GitHub/antononcube](https://github.com/antononcube).
 
-[AAp8] Anton Antonov,
+[AAp9] Anton Antonov,
+[Math::NIntegrate, Raku package](https://github.com/antononcube/Raku-Math-NIntegrate),
+(2026),
+[GitHub/antononcube](https://github.com/antononcube).
+
+[AAp10] Anton Antonov,
 [Math::NumberTheory, Raku package](https://github.com/antononcube/Raku-Math-NumberTheory),
 (2025-2026),
 [GitHub/antononcube](https://github.com/antononcube).
